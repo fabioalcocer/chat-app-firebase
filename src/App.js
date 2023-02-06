@@ -1,9 +1,14 @@
+import Login from './pages/Login'
+import Register from './pages/Register'
+import './style.scss'
+
 function App() {
   return (
-    <div>
-      Hello World!
-    </div>
-  );
+    <>
+    <Register />
+    <Login />
+    </>
+  )
 }
 
-export default App;
+export default App

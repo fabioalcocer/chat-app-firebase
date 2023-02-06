@@ -1,12 +1,12 @@
 import Sidebar from '../components/Sidebar'
 import Chat from '../components/Chat'
 
-function Home() {
+function Home () {
   return (
     <div className='home'>
-      <div className="container">
-        <Sidebar/>
-        <Chat/>
+      <div className='container'>
+        <Sidebar />
+        <Chat />
       </div>
     </div>
   )

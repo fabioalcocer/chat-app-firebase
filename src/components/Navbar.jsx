@@ -5,6 +5,9 @@ import { AuthContext } from '../context/AuthContext'
 
 function Navbar () {
   const { currentUser } = useContext(AuthContext)
+  const nameUser =
+    currentUser?.displayName?.charAt(0).toUpperCase() +
+    currentUser?.displayName?.slice(1)
 
   return (
     <div className='navbar'>
@@ -12,11 +15,8 @@ function Navbar () {
         <div className='userNav'>
           <span className='logo'>Toman Chat</span>
           <div>
-            <img
-              src='https://i.pinimg.com/736x/13/24/ea/1324eac9818feca89b9b0c5a4f546a3f.jpg'
-              alt=''
-            />
-            <span>Chifuyu Matsuno</span>
+            <img src={currentUser.photoURL} alt='' />
+            <span>{nameUser}</span>
           </div>
         </div>
         <button onClick={() => signOut(auth)}>logout</button>

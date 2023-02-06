@@ -4,7 +4,7 @@ import More from '../img/more.png'
 import Messages from './Messages'
 import Input from './Input'
 
-function Chat() {
+function Chat () {
   return (
     <div className='chat'>
       <div className='chatInfo'>

@@ -1,4 +1,4 @@
-function Message() {
+function Message () {
   return (
     <div className='message owner'>
       <div className='messageInfo'>
@@ -10,7 +10,7 @@ function Message() {
       </div>
       <div className='messageContent'>
         <p>I don't know why I do that.</p>
-        <img src="https://i.pinimg.com/564x/4c/7f/b5/4c7fb5c2c1e7cac29875654d0155ae12.jpg" alt="" />
+        <img src='https://i.pinimg.com/564x/4c/7f/b5/4c7fb5c2c1e7cac29875654d0155ae12.jpg' alt='' />
       </div>
     </div>
   )

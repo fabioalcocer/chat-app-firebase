@@ -1,4 +1,11 @@
-function Navbar() {
+import { useContext } from 'react'
+import { signOut } from 'firebase/auth'
+import { auth } from '../firebase'
+import { AuthContext } from '../context/AuthContext'
+
+function Navbar () {
+  const { currentUser } = useContext(AuthContext)
+
   return (
     <div className='navbar'>
       <div className='user'>
@@ -12,7 +19,7 @@ function Navbar() {
             <span>Chifuyu Matsuno</span>
           </div>
         </div>
-        <button>Logout</button>
+        <button onClick={() => signOut(auth)}>logout</button>
       </div>
     </div>
   )

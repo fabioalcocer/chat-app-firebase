@@ -2,7 +2,7 @@ import Navbar from './Navbar'
 import Search from './Search'
 import Chats from './Chats'
 
-function Sidebar() {
+function Sidebar () {
   return (
     <div className='sidebar'>
       <Navbar />

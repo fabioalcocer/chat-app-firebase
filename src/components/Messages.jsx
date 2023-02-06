@@ -1,6 +1,6 @@
-import Message from "./Message"
+import Message from './Message'
 
-function Messages() {
+function Messages () {
   return (
     <div className='messages'>
       <Message />

@@ -31,7 +31,10 @@ function Message ({ message }) {
         {/* <span>just now</span> */}
       </div>
       <div className='messageContent'>
-        <p>{message.text}</p>
+        <p>
+          {message.text}
+          <span>22:45</span>
+        </p>
         {message.img && <img src={message.img} alt='' />}
       </div>
     </div>

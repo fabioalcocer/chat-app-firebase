@@ -13,13 +13,12 @@ function Navbar () {
     <div className='navbar'>
       <div className='user'>
         <div className='userNav'>
-          <span className='logo'>Toman Chat</span>
           <div>
             <img src={currentUser.photoURL} alt='' />
-            <span>{nameUser}</span>
+            <h2>{nameUser}</h2>
           </div>
+          <button onClick={() => signOut(auth)}>Logout</button>
         </div>
-        <button onClick={() => signOut(auth)}>logout</button>
       </div>
     </div>
   )

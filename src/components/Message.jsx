@@ -3,7 +3,6 @@ import { AuthContext } from '../context/AuthContext'
 import { ChatContext } from '../context/ChatContext'
 
 function Message ({ message }) {
-  console.log(message)
   const { currentUser } = useContext(AuthContext)
   const { data } = useContext(ChatContext)
 
@@ -29,7 +28,7 @@ function Message ({ message }) {
           }
           alt=''
         />
-        <span>just now</span>
+        {/* <span>just now</span> */}
       </div>
       <div className='messageContent'>
         <p>{message.text}</p>

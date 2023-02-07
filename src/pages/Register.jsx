@@ -76,15 +76,15 @@ function Register () {
           <input
             type='text'
             placeholder='display name'
-            name=''
-            id=''
+            name='username'
+            id='username'
           />
           <input type='email' placeholder='email' name='' id='' />
           <input
             type='password'
             placeholder='password'
-            name=''
-            id=''
+            name='password'
+            id='password'
           />
           <input
             style={{ display: 'none' }}

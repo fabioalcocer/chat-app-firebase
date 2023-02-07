@@ -24,7 +24,7 @@ function Chat () {
             }
             alt='chat avatar'
           />
-          <span>{nameUser || 'User'}</span>
+          <p>{nameUser || 'User'}</p>
         </div>
         <div className='chatIcons'>
           <img src={Cam} alt='' />

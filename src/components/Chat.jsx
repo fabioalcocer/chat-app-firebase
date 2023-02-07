@@ -9,8 +9,8 @@ import { ChatContext } from '../context/ChatContext'
 function Chat () {
   const { data } = useContext(ChatContext)
   const nameUser =
-    data?.user?.displayName.charAt(0).toUpperCase() +
-    data?.user?.displayName.slice(1)
+    data.user?.displayName?.charAt(0).toUpperCase() +
+    data.user?.displayName?.slice(1)
 
   return (
     <div className='chat'>
@@ -24,7 +24,7 @@ function Chat () {
             }
             alt='chat avatar'
           />
-          <span>{nameUser}</span>
+          <span>{nameUser || 'User'}</span>
         </div>
         <div className='chatIcons'>
           <img src={Cam} alt='' />

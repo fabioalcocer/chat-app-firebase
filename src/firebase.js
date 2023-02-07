@@ -6,7 +6,7 @@ import { getStorage } from 'firebase/storage'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyCCoDxrp6J9fqrXZUy_3m2vGx8tu9sgLQc',
+  apiKey: process.env.REACT_APP_FIREBASE_KEY,
   authDomain: 'chat-57369.firebaseapp.com',
   projectId: 'chat-57369',
   storageBucket: 'chat-57369.appspot.com',

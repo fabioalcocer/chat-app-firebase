@@ -8,6 +8,13 @@ function Message ({ message }) {
 
   const ref = useRef()
 
+  const hour = message.date
+    .toDate()
+    .toString()
+    .split(' ')
+    .slice(4, 5)[0]
+    .slice(0, 5)
+
   useEffect(() => {
     ref.current?.scrollIntoView({ behavior: 'smooth' })
   }, [message])
@@ -28,12 +35,11 @@ function Message ({ message }) {
           }
           alt=''
         />
-        {/* <span>just now</span> */}
       </div>
       <div className='messageContent'>
         <p>
           {message.text}
-          <span>22:45</span>
+          <span>{hour}</span>
         </p>
         {message.img && <img src={message.img} alt='' />}
       </div>

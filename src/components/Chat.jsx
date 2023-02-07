@@ -9,14 +9,21 @@ import { ChatContext } from '../context/ChatContext'
 function Chat () {
   const { data } = useContext(ChatContext)
   const nameUser =
-    data.user?.displayName.charAt(0).toUpperCase() +
-    data.user?.displayName.slice(1)
+    data?.user?.displayName.charAt(0).toUpperCase() +
+    data?.user?.displayName.slice(1)
 
   return (
     <div className='chat'>
       <div className='chatInfo'>
         <div className='chatInfoHeader'>
-          <img src={data.user?.photoURL} alt='chat avatar' />
+          <img
+            src={
+              data.user?.photoURL
+                ? data.user?.photoURL
+                : 'https://i.pinimg.com/564x/01/db/20/01db206a4027a54d0ef95ae74ff5b0c9.jpg'
+            }
+            alt='chat avatar'
+          />
           <span>{nameUser}</span>
         </div>
         <div className='chatIcons'>

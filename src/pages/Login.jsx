@@ -25,7 +25,7 @@ function Login () {
     <div className='formContainer'>
       <div className='formWrapper'>
         <span className='logo'>Fabio Chat</span>
-        <span className='title'>Register</span>
+        <span className='title'>Log In</span>
         <form onSubmit={handleSubmit}>
           <input type='email' placeholder='email' name='' id='' />
           <input

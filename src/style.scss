@@ -15,7 +15,7 @@
 }
 
 .formContainer {
-  background-color: #a7bcff;
+  background-color: #0f5f5c;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -31,7 +31,7 @@
     align-items: center;
 
     .logo {
-      color: #5d5b8d;
+      color: #3b3a69;
       font-weight: bold;
       font-size: 24px;
     }
@@ -50,38 +50,48 @@
         padding: 15px;
         border: none;
         width: 250px;
-        border-bottom: 1px solid #a7bcff;
+        border-bottom: 1px solid #148884;
         &::placeholder {
           color: rgb(175, 175, 175);
         }
       }
 
       button {
-        background-color: #7b96ec;
+        background-color: #148884;
         color: white;
         padding: 10px;
         font-weight: bold;
         border: none;
         cursor: pointer;
+        &:hover {
+          background-color: #189995;
+        }
       }
 
       label {
         display: flex;
         align-items: center;
         gap: 10px;
-        color: #8da4f1;
-        font-size: 12px;
+        color: #148884;
+        font-weight: 500;
+        font-size: 13px;
         cursor: pointer;
 
         img {
           width: 32px;
+          filter: hue-rotate(270deg);
         }
       }
     }
     p {
       color: #5d5b8d;
-      font-size: 12px;
+      font-size: 13px;
       margin-top: 10px;
+      a {
+        color: #148884;
+        font-weight: 700;
+        font-size: 11px;
+      }
     }
   }
 }
@@ -352,7 +362,7 @@
           color: white;
           font-size: 16px;
           padding-left: 1rem;
-          padding-bottom: 5px;
+          padding-bottom: 2px;
           caret-color: white;
 
           &::placeholder {
